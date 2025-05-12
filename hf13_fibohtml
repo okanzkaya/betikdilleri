@@ -1,0 +1,26 @@
+<html lang="en">
+    <head>
+    </head>
+    <body>
+        <script>
+            var toplam = 0;
+            function azalt(n) {
+            if(n == 0) {
+                console.log(n);
+                console.log("bitti!");
+                console.log("dizi toplam:");
+                console.log(toplam);
+                return 0;
+            }
+            console.log(n);
+            toplamartir(n);
+            return azalt(n - 5)
+            }
+            function toplamartir(x){
+                toplam = toplam + x;
+            }
+            azalt(100);
+
+        </script>
+    </body>
+</html>
