@@ -16,6 +16,13 @@ class Ogrenci:
     def __str__(self):
         return f"{self.ad} {self.soyad}, öğrenci no: {self.ogrno}"
 
+class Siniflar:
+    def __init__(self):
+        self.siniflar = []
+
+    def sinif_ekle(self, sinif):
+        self.siniflar.append(sinif)
+
 class Sinif:
     def __init__(self, sinifno):
         self.sinifno = sinifno
